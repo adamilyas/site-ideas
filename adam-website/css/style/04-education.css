@@ -1,0 +1,16 @@
+.EducationPage {
+    background-color: #d1d7db;    
+    height: 650px;
+    width: auto;
+}
+
+.EducationHeader {
+    height: 100px;
+}
+
+.EducationPage .InnerBox {
+
+    /* height: 60%; */
+    width: 90%;
+    
+}

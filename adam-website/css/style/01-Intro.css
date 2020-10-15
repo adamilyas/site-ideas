@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* .Container {
+} */
+
+.CoverPage {
+
+    height: 650px;
+    width: 100%;
+}
+
+.InnerBox {
+    position: relative;
+    margin: auto;
+    width: 50%;
+
+}
+
+.CoverPage .InnerBox {
+
+    display: flex; 
+    height: 60%;
+    top: 40%;
+}
+
+.CoverPage .InnerBox > div {
+    /* This selector controls LeftIntroBox and RightIntroBox */
+
+    /* Makes both boxes line up horizontally */
+    display: inline-block;
+}
+
+/* .LeftIntroBox {
+} */
+
+.RightIntroBox {
+    width: 20%;
+
+    /* Make this div hug the right margin*/
+    margin-left:auto; 
+    margin-right: 0;
+}
+
+.CoverPage  .RightIntroBox {
+    text-align: right;
+}
+
+.RightIntroBox > img {
+    height: 60%;
+}
+
+.IntroLinks {
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.IntroLinks  * {
+    display: inline-block;
+    font-family: "Raleway";
+    text-decoration: none;
+    color: #494848;
+}
+
+
+.IntroLeftLink a {
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.IntroRightLink {
+    font-size: 15px;
+    animation: fall-down 2s 1;
+    border-radius: 3px;
+}
+
+
+.IntroLinks a:hover {
+    font-weight:bold;
+}
+
+/* .IntroStatementBox {
+} */
+
+p.IntroStatement {
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    color: #494848;
+    margin-bottom: 8%;
+}
+
+
+
+
+
+
+
+
+@keyframes fall-down
+{
+     0% {
+        /* box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2); */
+        transform: translateY(-25rem)
+     }
+
+
+    50% {
+        /* box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2); */
+        transform: translateY(2rem)
+     }
+
+     100% {
+        /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); */
+     }
+}

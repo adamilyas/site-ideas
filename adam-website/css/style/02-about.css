@@ -1,0 +1,108 @@
+.AboutPage {
+    /* background-color: #d1d7db;     */
+    background-color: #d1fff4;    
+    height: auto;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+.AboutHeader , .AboutFooter {
+    height: 100px;
+}
+
+.AboutPage .InnerBox {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.AboutCardsRow {
+    box-sizing: content-box;
+    display: flex;
+    width: 80%;
+    margin: 0;
+    /* background-color: red; */
+}
+
+.AboutPlaceHolderGrid {
+    padding-left: 150px;
+    padding-right: 150px;
+    /* background-color: white; */
+    width: 100px;
+    display: flex;
+    flex: 0 0 450px;      
+    /* justify-content: flex-end; */
+    /* flex-direction: column; */
+  
+}
+
+.AboutPlaceHolderCard {
+    border-style: solid;
+    border-color: #494848;
+    min-width: 400px;
+    min-height: 350px;
+    padding: 1.5rem;
+    /* border-radius: 16px;     */
+}
+
+/* Make into row */
+.AboutCardsGrid {
+    scrollbar-color: #201c29;
+    scrollbar-width: 10px;
+    /* scrollbar-gutter: always; */
+    /* padding: 3rem; */
+    display: flex;
+    /* overflow-x: scroll; */
+    /* -webkit-overflow-scrolling: touch */
+}
+
+.AboutCard {
+    min-width: 300px;
+    min-height: 350px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    /* background: #17141d; */
+    background-color: white;
+    box-shadow: -1rem 0 1rem #d1d7db;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0
+}
+
+
+
+/* Scroll bar below */
+
+.AboutCardsGrid::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+.AboutCardsGrid::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25)
+}
+
+.AboutCardsGrid::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d)
+}
+
+
+
+
+/* Control the over lap 
+    Except the first card that u see.
+*/
+.AboutCard:not(:first-child) {
+    margin-left: -130px
+}
+
+.AboutCard:focus-within, .AboutCard:hover {
+    transform: translateY(-2rem)
+}
+
+.AboutCard:focus-within~.AboutCard, .AboutCard:hover~.AboutCard {
+    transform: translateX(200px)
+}
